@@ -11,7 +11,7 @@
 - Test each intended Claude surface; record results before claiming support.
 - Confirm privacy, retention, minors, and contact answers with the service owner before submitting.
 - Submit the hosted MCP server separately as an MCP connector if it has not already been submitted.
-- In https://claude.ai/directory/manage select Submit new > Plugin bundle; use keshavkatwe/claude-plugin, root path, and main branch.
+- In https://claude.ai/directory/manage select Submit new > Plugin bundle; use keshavkatwe/pushwing-claude-plugin, root path, and main branch.
 - Validate in the portal, address findings, and submit for review.
 - Keep the repository public for publication. Increment plugin.json version for updates.
 

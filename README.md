@@ -5,7 +5,7 @@ Publish and schedule content on your own connected YouTube and Instagram account
 ## Install in Claude Code
 
 ```sh
-claude plugin marketplace add keshavkatwe/claude-plugin
+claude plugin marketplace add keshavkatwe/pushwing-claude-plugin
 claude plugin install pushwing@pushwing-plugins
 ```
 
@@ -42,7 +42,7 @@ Run the [release checklist](docs/RELEASE.md) before submitting or publishing a v
 
 ## Support and availability
 
-Report integration issues in [GitHub Issues](https://github.com/keshavkatwe/claude-plugin/issues), without credentials or private media. Account availability, optional analytics permissions, quotas, and provider restrictions are determined by the live service. YouTube quota pools are shared across the Pushwing project.
+Report integration issues in [GitHub Issues](https://github.com/keshavkatwe/pushwing-claude-plugin/issues), without credentials or private media. Account availability, optional analytics permissions, quotas, and provider restrictions are determined by the live service. YouTube quota pools are shared across the Pushwing project.
 
 The package is prepared for Claude directory submission; listing approval and authenticated testing on Claude chat, Cowork, and Claude Code remain separate steps.
 
