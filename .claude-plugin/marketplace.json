@@ -1,0 +1,14 @@
+{
+  "name": "pushwing-plugins",
+  "owner": {
+    "name": "Pushwing"
+  },
+  "plugins": [
+    {
+      "name": "pushwing",
+      "source": "./",
+      "description": "YouTube and Instagram publishing with Pushwing"
+    }
+  ],
+  "description": "Pushwing plugins for YouTube and Instagram publishing, scheduling, and reporting"
+}

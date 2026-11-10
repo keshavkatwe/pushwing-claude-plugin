@@ -1,0 +1,24 @@
+{
+  "name": "pushwing",
+  "displayName": "Pushwing",
+  "version": "0.1.0",
+  "description": "Publish and schedule YouTube and Instagram content, check upload status, and review performance through Pushwing.",
+  "author": {
+    "name": "Pushwing",
+    "url": "https://pushwing.com"
+  },
+  "homepage": "https://pushwing.com",
+  "repository": "https://github.com/keshavkatwe/claude-plugin",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://pushwing.com/privacy",
+  "termsOfServiceUrl": "https://pushwing.com/terms",
+  "supportUrl": "https://github.com/keshavkatwe/claude-plugin/issues",
+  "keywords": [
+    "youtube",
+    "instagram",
+    "publishing",
+    "scheduling",
+    "analytics"
+  ],
+  "icon": "./.claude-plugin/icon.png"
+}
