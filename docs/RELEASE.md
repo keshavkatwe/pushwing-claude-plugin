@@ -1,5 +1,9 @@
 # Release checklist
 
+Work on a feature branch from `main` and open a pull request. `main` requires
+passing `validate` CI, an up-to-date branch and resolved conversations, including
+for administrators. Squash-merge the PR after review. No build step is needed.
+
 - Run `claude plugin validate . --strict`.
 - Install from the marketplace and verify all five skills load.
 - Authenticate through Claude; verify setup with no accounts, one account, multiple accounts, expired consent, and exhausted limits.
