@@ -20,3 +20,7 @@ for administrators. Squash-merge the PR after review. No build step is needed.
 - Keep the repository public for publication. Increment plugin.json version for updates.
 
 Authenticated behavior and portal validation have not been completed by the repository scaffold.
+
+## Prepared guidance for MCP 0.13
+
+New publication reviews use `pushwing_prepare_publish_preview`, including private YouTube uploads, followed by the named original publishing tool after approval. Pass the resolved IANA `timezone` at the preparation root when its schema supports it. Account/usage checks remain plain reads; their display tools are for explicit requests. Future queued jobs are acknowledged without polling until their execution date; native YouTube publication schedules still require verifying the immediate upload. Older catalogs use the documented safe fallback and need a refresh after the server rollout. This source update does not deploy MCP, release the plugin or modify installed caches.
