@@ -34,3 +34,7 @@ jobs:
               assert body.strip()
           print('Validated nine skill entry points')
           PYTHON
+      - name: Check incomplete discovery detection
+        run: python3 -m unittest discover -s tests -v
+      - name: Check native marketplace tool discovery
+        run: python3 scripts/smoke_discovery.py --host claude
