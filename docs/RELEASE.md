@@ -5,7 +5,7 @@ passing `validate` CI, an up-to-date branch and resolved conversations, includin
 for administrators. Squash-merge the PR after review. No build step is needed.
 
 - Run `claude plugin validate . --strict`.
-- Install from the marketplace and verify all five skills load.
+- Install from the marketplace and verify all nine skills load.
 - Authenticate through Claude; verify setup with no accounts, one account, multiple accounts, expired consent, and exhausted limits.
 - Verify status and reporting are read-only and unsupported metrics are unavailable rather than zero.
 - Test requested private YouTube uploads only with selected test media and an explicitly authorized test account.
@@ -24,3 +24,14 @@ Authenticated behavior and portal validation have not been completed by the repo
 ## Prepared guidance for MCP 0.13
 
 New publication reviews use `pushwing_prepare_publish_preview`, including private YouTube uploads, followed by the named original publishing tool after approval. Pass the resolved IANA `timezone` at the preparation root when its schema supports it. Account/usage checks remain plain reads; their display tools are for explicit requests. Future queued jobs are acknowledged without polling until their execution date; native YouTube publication schedules still require verifying the immediate upload. Older catalogs use the documented safe fallback and need a refresh after the server rollout. This source update does not deploy MCP, release the plugin or modify installed caches.
+
+## Prepared 0.2.0 workspace workflows
+
+Four additional skills cover brand-setup, new-post, continue-post and review-post.
+The existing account setup remains read-only; publish/schedule can hand off a
+selected saved post without requiring workspace records for standalone files.
+Before release, deploy/verify the MCP workspace catalog separately, refresh it
+in the intended client, and verify all nine skill entries. Preserve endpoint,
+OAuth scope, app identity and installed-cache configuration. This preparation
+changes source/package versions only; no commit, installation, server deployment,
+marketplace publication or fresh-client acceptance is implied.

@@ -1,8 +1,8 @@
 {
   "name": "pushwing",
   "displayName": "Pushwing",
-  "version": "0.1.3",
-  "description": "Publish and schedule YouTube and Instagram content, check upload status, and review performance through Pushwing.",
+  "version": "0.2.0",
+  "description": "Set up saved brand context, create and review posts, then publish, schedule and report on your own YouTube and Instagram accounts.",
   "author": {
     "name": "Pushwing",
     "url": "https://pushwing.com"
