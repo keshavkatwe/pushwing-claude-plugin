@@ -42,7 +42,7 @@ remain separate actions; record their evidence separately.
 Run package validation, `python3 -m unittest discover -s tests -v` and
 `python3 scripts/smoke_discovery.py --host claude` before release. CI runs these
 checks using a pinned client. The isolated native marketplace check must expose
-all 97 baseline tools with both 35- and 100-entry pages. It uses mock local
+all 98 baseline tools with both 35- and 100-entry pages. It uses mock local
 endpoints and no real credentials, models or publishing operations.
 
 Before claiming a marketplace fix, separately run the real-client catalog check
@@ -50,6 +50,16 @@ in [TESTING.md](TESTING.md). Preserve the incomplete-catalog failure as a failed
 acceptance result even when the custom-MCP fallback works. Do not infer desktop
 acceptance from the controlled CLI check or package validation.
 
-## Prepared: single publishing preview and scoped approval
+## MCP 0.15.0 support — plugin 0.3.0
+
+Brand setup now also handles deletion with an exact owned brand, the server's
+no-write preview and separate explicit approval before `confirm=true`. Require
+all 98 tools, including `pushwing_delete_workspace_brand`, in discovery checks.
+Connected accounts, provider posts, publishing jobs and referenced files remain
+independent. Preserve older catalog fallback and OAuth identity. The release
+keeps nine workflows; installation and host acceptance remain separate from
+source availability and MCP Registry publication.
+
+## Plugin 0.3.1: single publishing preview and scoped approval
 
 The publishing widget is the single media/caption/schedule preview. Its valid Approve schedule click confirms the exact schedule and submits through the original publishing tool without another confirmation question. Normal host approval checks remain; rejections are explained without alternate routes or keyword workarounds. Plain text fallback remains available when the widget cannot render or the user requests it. Source changes only; installation, server deployment and native-host acceptance remain separate.

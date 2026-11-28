@@ -146,7 +146,7 @@ discovery; they do not establish that a desktop installation exposes every tool.
 
 The plugin package supplies nine workflows and declares the hosted MCP connection;
 the live service supplies the tools. Their versions are independent. The current
-MCP 0.14.2 catalog contains **97 tools**, including publishing preview, brand save
+MCP 0.15.0 catalog contains **98 tools**, including publishing preview, brand save, brand deletion
 and 56 YouTube tools.
 
 An incomplete marketplace catalog was observed in Codex desktop: 33 tools were
@@ -161,3 +161,14 @@ validation or reinstall alone does not prove model-facing availability. The
 custom connection and packaged skills are separate: connecting the server does
 not by itself install the nine skills. See [client checks](docs/TESTING.md) for the
 discovery checker and the distinction between automated CLI and desktop acceptance.
+
+## Brand deletion from plugin 0.3.0
+
+Use the existing `brand-setup` workflow to delete a saved brand and all content
+inside it. It requires MCP 0.15.0 and `pushwing_delete_workspace_brand`: select
+the exact brand, inspect its deletion preview and explicitly approve it before
+execution. The brand kit, playbooks, content, revisions, notes and reviews are
+permanently removed. Connected accounts, provider posts, publishing jobs and
+referenced files remain; queued schedules can still run. Cancellation does
+nothing. Older catalogs require a refresh; OAuth reconnection is not a routine
+update step. The nine workflow names and hosted endpoint are unchanged.
