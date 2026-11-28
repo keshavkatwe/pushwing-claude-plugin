@@ -19,7 +19,7 @@ and the user's installed packages are untouched. No user credentials are copied,
 no provider handlers run and the model returns canned local responses. No paid
 model request or publishing action is required.
 
-The fixture advertises the 97 tool names recorded from MCP 0.14.2, with synthetic
+The fixture advertises the 98 tool names verified against MCP 0.15.0, with synthetic
 deeply nested preview/brand input schemas, under 35-entry and 100-entry page
 limits. Codex must expose every entry through code-mode `ALL_TOOLS` with a
 callable handle. Claude Code must advertise every MCP tool to the local model
@@ -39,8 +39,9 @@ do not lower its requirements merely to accept an incomplete client.
 Use a new conversation after installing/updating the intended package. Record
 the plugin version, client/build, connection type and server version. Check
 **model-facing availability**, not just the server's `tools/list` count. The
-current baseline is MCP 0.14.2 with 97 tools, including
-`pushwing_prepare_publish_preview`, `pushwing_save_workspace_brand` and all 56
+current baseline is MCP 0.15.0 with 98 tools, including
+`pushwing_prepare_publish_preview`, `pushwing_save_workspace_brand`,
+`pushwing_delete_workspace_brand` and all 56
 YouTube tools.
 
 Export one connection at a time; do not combine duplicate marketplace and custom
@@ -92,3 +93,14 @@ installed plugin/server versions and actual outputs; do not use production accou
 | Workspace tools absent from an older service | Clear capability limitation; useful draft labelled unsaved; no credential/database/endpoint workaround |
 | Publish a standalone file | Existing publish flow works without requiring a brand or workspace review ledger |
 | Publish a selected saved post | Current accepted files/account/copy used in concrete publication preview; note failure never republishes |
+
+## Brand-deletion acceptance
+
+Use disposable saved content only when the user explicitly authorizes a live
+deletion test. Verify an ambiguous name is resolved, the unconfirmed call leaves
+records intact, the preview names the full permanent scope, cancellation sends
+no confirmed call, and confirmed deletion removes the brand's saved descendants.
+Check that connected accounts, provider posts, publishing jobs and external files
+remain. An older 97-tool catalog must fail the 98-tool completeness check; a
+missing deletion tool must stop the workflow without a direct HTTP/DB fallback.
+Read-only live catalog verification is separate from these destructive cases.
